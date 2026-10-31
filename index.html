@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last Door</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="game-container">
+
+        <header class="game-header">
+            <h1>THE LAST DOOR</h1>
+            <p>A PIXEL HORROR ADVENTURE</p>
+        </header>
+
+        <section class="game-wrapper">
+
+            <div class="game-hud">
+                <span>HEALTH: <span id="health">3</span></span>
+                <span>KEYS: <span id="keys">0</span>/3</span>
+            </div>
+
+            <canvas id="gameCanvas" width="960" height="540">
+                Your browser does not support HTML Canvas.
+            </canvas>
+
+            <div id="start-screen" class="overlay">
+                <h2>THE LAST DOOR</h2>
+                <p>You are not alone in this house...</p>
+                <button id="start-btn">START GAME</button>
+            </div>
+
+            <div id="end-screen" class="overlay hidden">
+                <h2 id="end-title">GAME OVER</h2>
+                <p id="end-message">You didn't make it out.</p>
+                <button id="restart-btn">TRY AGAIN</button>
+            </div>
+
+        </section>
+
+        <section class="instructions">
+            <h3>CONTROLS</h3>
+            <p>
+                A / D or ARROW KEYS - MOVE
+            </p>
+            <p>
+                SPACE - JUMP
+            </p>
+        </section>
+
+        <footer>
+            <p>THE LAST DOOR © 2026</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
